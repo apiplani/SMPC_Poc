@@ -40,7 +40,7 @@ sql_conn_str = create_engine(
 df_pdf = pd.read_pdf("SPC.PDF") ##This is wrong step
 
 df_pdf.to_sql(
-    name="Substance_group", 
+    name="SMPC", 
     con=sql_conn_str,
     schema="Staging", 
     if_exists="replace", index=False)
